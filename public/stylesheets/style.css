@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'manga';
+  src: url('../fonts/Manga.otf');
+}
+
+body {
+  font-family: 'manga';
+  background-color: #292929;
+  color: whitesmoke;
+}
+
+#mainTitle {
+  text-align: center;
+}
+
+#mainTitle a {
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: darkred;
+  cursor: url('../images/cursor_new.png'), auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* --- MENU --- */
+
+.menu {
+  display: flex;
+  place-content: space-around;
+  background-color: #292929;
+  align-items: center;
+  height: 10vh;
+  border-radius: 10px;
+  border: whitesmoke solid 0.5px;
+}
+
+/* --- CONTAINER --- */
+
+#containerTitle {
+  text-align: center;
+}
+
+.container {
+  margin: 30px;
+}
+
+/* --- HOME --- */
+
+.div {
+  width: 100%;
+  background-color: #292929;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  border: solid 0.5px whitesmoke;
+}
+
+.div:hover {
+  box-shadow: 5px 5px darkred;
+  background-color: #66656578;
+}
+
+.mangaPic {
+  width: 20%;
+  height: 90%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- LOGIN --- */
+
+.form {
+  text-align: -webkit-center;
+  /*gotta find an other way coz it works only on chrome*/
+}
+
+#formSub {
+  display: none;
+}
+
+.login-box {
+  width: 50%;
+  height: 60vh;
+  padding: 40px;
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.btnLog {
+  padding: 5px;
+  width: 60%;
+  border-radius: 10px;
+  border: solid 1px whitesmoke;
+  background-color: #141414;
+  color: whitesmoke;
+  font-family: 'manga';
+}
+
+.btnLog:hover {
+  background-color: #228B22;
+  box-shadow: 0 0 6px #228B22;
+  border: solid 1px #228B22;
+  cursor: url('../images/cursor_new.png'), auto;
+}
+
+.buttonForm {
+  width: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+
+#submit {
+  border: none;
+  height: 50px;
+  width: 50%;
+  border-top-right-radius: 10px;
+}
+
+#login {
+  border: none;
+  height: 50px;
+  width: 50%;
+  border-top-left-radius: 10px;
+}
+
+#login:hover,
+#submit:hover {
+  box-shadow: 0 0 6px #228B22;
+  border: solid 1px #228B22;
+  cursor: url("../images/cursor_new.png"), auto;
+}
+
+.active {
+  background-color: #24bb24;
+}
+.unactive {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+/* --- FOOTER --- */
+
+.footer {
+  background-color: #292929;
+  display: flex;
+  place-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border-radius: 10px;
+  border: whitesmoke solid 0.5px;
+}
+
+.footLinks img {
+  border-radius: 100%;
+}

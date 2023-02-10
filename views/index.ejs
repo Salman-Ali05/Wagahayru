@@ -1,0 +1,35 @@
+<%- include("header");%>
+  <script>
+  </script>
+
+  <div class="container">
+    <h1 id="containerTitle">Welcome to Wagahayru !</h1>
+    <div class="div">
+      <img class="mangaPic" src=<%=anime.coverImage.large %>>
+      <div class="content">
+        <h2>Latest manga</h2>
+        <p>
+          <%= anime.title.romaji %> is the most recent manga out according to Anilist ! Wanna see more ? Check the link
+            below !
+        </p>
+        <p>See more for<a href="#">
+            <%= anime.title.romaji %>
+          </a></p>
+      </div>
+    </div>
+    <div class="div">
+      <img class="mangaPic" src=<%=anime.coverImage.large %>>
+      <div class="content">
+        <h2>Latest manga</h2>
+        <p>
+          <%= anime.title.romaji %> is the most recent anime out according to Anilist ! Wanna see more ? Check the link
+            below !
+        </p>
+        <p>See more for<a href="#">
+            <%= anime.title.romaji %>
+          </a></p>
+      </div>
+    </div>
+  </div>
+
+  <%- include("footer");%>
